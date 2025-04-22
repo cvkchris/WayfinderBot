@@ -38,6 +38,7 @@ WayfinderBot/
 │   └── __init__.py              # (optional) makes it a Python package
 ├── requirements.txt             # Python dependencies
 └── README.md                    # Project documentation
+```
 
 ---
 
@@ -81,9 +82,3 @@ WayfinderBot/
 
 ---
 
-## Project Demonstration
-
-<video width="100%" height="auto" controls>
-  <source src="warehouserobot/RL-Demo.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
