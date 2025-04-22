@@ -29,7 +29,7 @@ This project implements:
 ---
 
 ## 🗂️ Project Structure
-
+```
 WayfinderBot/
 ├── warehouserobot/
 │   ├── learning_process.py      # Q-learning training logic
