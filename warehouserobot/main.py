@@ -2,6 +2,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 import os
+import matplotlib
+matplotlib.use('TkAgg')  
 
 # Environment setup
 rows, cols = 11, 11
@@ -148,14 +150,14 @@ def animate_path(path, rewards):
         if frame < len(path):
             row, col = path[frame]
             y = rows - row - 1
-            robot.set_data(col, y)
+            robot.set_data([col],[y])
             trail_x.append(col)
             trail_y.append(y)
             trail.set_data(trail_x, trail_y)
         return robot, trail
 
     ani = animation.FuncAnimation(fig, update, frames=len(path), interval=500, blit=True, repeat=False)
-    plt.title("🤖 Robot Walking to the Goal 🚩")
+    plt.title("Robot Walking to the Goal")
     plt.tight_layout()
     plt.show()
 
